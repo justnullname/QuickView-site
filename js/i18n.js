@@ -1,190 +1,131 @@
 const translations = {
     "en": {
         "nav.performance": "Performance",
-        "nav.architecture": "Tech Specs",
+        "nav.hdr": "HDR & Color",
         "nav.features": "Features",
-        "cta.download": "Download v3.0.4",
+        "cta.download": "Download v5.0.0",
         "cta.github": "View Source",
-        "hero.title": "The Fastest Image Viewer<br>for Windows.",
-        "hero.subtitle": "A professional-grade image viewer focused purely on speed. Open source, yet rivals top-tier commercial software.<br>Renowned for its lightweight footprint, instant response, and comprehensive format support. Built for designers and photographers.",
+        "hero.title": "Professional Viewing.<br>Beyond SDR.",
+        "hero.subtitle": "The high-performance image viewer for Windows. Powered by Google Highway SIMD and a professional 32-bit linear pipeline. Native ARM64, 100% Offline, Zero Bloat.",
 
-        "arch.title": "Core Engine: Quantum Flow",
-        "arch.desc": "Unlike traditional viewers that freeze when loading large files, QuickView uses <span class='text-blue'>Anti-Freeze Technology</span> to keep the interface responsive.",
+        "hdr.title": "Industrial Color Mastery",
+        "hdr.desc": "QuickView 5.0 moves beyond 8-bit limits. Our <span class='text-hdr'>Quantum HDR Engine</span> provides true-to-life brightness composition and professional-grade color management.",
+        "hdr.feat1": "End-to-end 32-bit floating point processing eliminates banding and ensures absolute fidelity for wide-gamut masters.",
+        "hdr.feat2": "Native GPU support for Google/Samsung Gain Maps. Experience the full dynamic range of your modern mobile photos.",
+        "hdr.feat3": "Simulate professional output profiles (CMYK, Printer) in real-time. Direct-to-GPU ICC management with no latency.",
 
-        "feat.matrix": "01. Performance Monitor",
-        "feat.matrix.desc": "Press <strong class='text-primary'>F12</strong> to see real-time computer resource usage (CPU/GPU/Memory) and rendering speed.",
-
-        "feat.svg": "02. Vector Rendering",
-        "feat.svg.desc": "Uses <strong class='text-green'>Hardware Acceleration</strong>. Zoom in infinitely without any blur or pixelation.",
-
-        "feat.skip": "03. Smart Memory",
-        "feat.skip.desc": "Automatically optimizes memory usage on low-end devices to prevent crashing, while running fast on high-end PCs.",
-
-        "feat.control": "04. Total Control",
-        "feat.control.desc": "Customize every click. Rebind mouse actions (Pan/Zoom), toggle transparency grids, and adjust scrolling logic.",
-
-        "feat.design": "05. Designer Mode",
-        "feat.design.desc": "Borderless window + 'Always on Top' (Ctrl+T). Perfect for pinning reference images over other creative software.",
-
-        "feat.inspect": "06. Deep Inspection",
-        "feat.inspect.desc": "Professional analysis tools: Check Color Space (P3/sRGB), Compression Quality, and full EXIF camera data.",
-
-        "feat.repair": "07. Auto-Repair",
-        "feat.repair.desc": "Smartly detects file types. Auto-fixes incorrect file extensions (e.g., a PNG saved as .jpg) with one click.",
-
-        "feat.raw": "08. Instant RAW",
-        "feat.raw.desc": "One-click Rendering for Professional RAW files (ARW/CR3). Instantly switch between Fast Preview and High-Quality Decode.",
-
-        "feat.wall": "09. Photo Wall",
-        "feat.wall.desc": "Press 'T' to turn your folder into a smooth, high-performance infinite gallery view.",
-
-        "feat.portable": "10. Portable",
-        "feat.portable.desc": "Single file (exe). No installation required. Carry your settings in a USB stick.",
-
-        "philo.title": "Why QuickView?",
-        "philo.speed.title": "Speed First",
-        "philo.speed.desc": "We use the latest technology, fastest algorithms, and optimized frameworks to maximize your PC's performance.",
-        "philo.privacy.title": "Privacy Native",
-        "philo.privacy.desc": "100% Offline. 100% Open Source.",
+        "philo.title": "Engineering Excellence",
+        "philo.speed.title": "SIMD Optimized",
+        "philo.speed.desc": "We use Google Highway for cross-architecture assembly-level speed. 5x-10x performance gain across all modern CPUs.",
+        "philo.privacy.title": "Enterprise Stability",
+        "philo.privacy.desc": "100% Offline. Zero telemetry. Built with C++23/26 and Direct2D for millisecond-perfect responsiveness.",
         "philo.bloat.title": "Zero Bloat",
-        "philo.bloat.desc": "6.xMB single-file executable. No garbage data. Fully portable support."
+        "philo.bloat.desc": "Single executable, no installers. We value your file system integrity—no registry bloat or background services.",
+
+        "feat.hist.desc": "Real-time SIMD-accelerated RGB envelope analysis. Understand every photon of your image data.",
+        "feat.svg.desc": "Direct2D resolution-independent path rendering. Infinite lossless zoom with no performance penalty.",
+        "feat.hdrpanel.desc": "Metadata inspection for MaxCLL, FALL, and real-time peak luminance estimation.",
+        "feat.sort.desc": "Browsing order standardizes to Windows natural numeric logic. Seamless folder cycling (#118).",
+        "feat.design.desc": "Borderless, Always-on-Top reference viewing. Perfect for technical artists and designers.",
+        "feat.portable.desc": "Carry professional imaging tools in your pocket. No installation, fully self-contained configuration."
     },
     // Simplified Chinese
     "zh-CN": {
         "nav.performance": "极致性能",
-        "nav.architecture": "核心技术",
+        "nav.hdr": "HDR 与色彩",
         "nav.features": "功能亮点",
-        "cta.download": "下载 v3.0.4",
+        "cta.download": "下载 v5.0.0",
         "cta.github": "查看源码",
-        "hero.title": "Windows 平台<br>最快的图像查看器。",
-        "hero.subtitle": "专注于速度的图片查看器。作为开源软件，其性能媲美甚至超越商用同类产品。<br>以轻量、速度、全面的格式兼容著称。专为图像工作者打造。",
+        "hero.title": "专业看图。<br>越级 HDR。",
+        "hero.subtitle": "Windows 平台的高性能图像查看器。采用 Google Highway SIMD 与专业 32 位线性管线。原生支持 ARM64，100% 离线，绿色无痕。",
 
-        "arch.title": "核心引擎：量子流 (Quantum Flow)",
-        "arch.desc": "拒绝卡顿。区别于传统软件，QuickView 采用独家的 <span class='text-blue'>防卡顿技术 (Anti-Freeze)</span>，在加载超大图片时界面依然丝般顺滑。",
+        "hdr.title": "工业级色彩大师",
+        "hdr.desc": "QuickView 5.0 突破了 8 位色的极限。我们的 <span class='text-hdr'>量子 HDR 引擎</span> 可提供真实亮度的合成与专业级色彩管理。",
+        "hdr.feat1": "全链路 32 位浮点处理，彻底消除色带断层，确保广色域样张的绝对还原。",
+        "hdr.feat2": "原生 GPU 支持 Google/Samsung 增益图 (Gain Map)。在电脑上体验现代手机照片的全动态范围。",
+        "hdr.feat3": "实时模拟专业输出配置文件（CMYK、打印机）。直达 GPU 的 ICC 管理，零延迟切换。",
 
-        "feat.matrix": "01. 性能监控 HUD",
-        "feat.matrix.desc": "按 <strong class='text-primary'>F12</strong> 开启极客面板。实时显示内存占用、显卡状态和渲染延迟，性能一目了然。",
+        "philo.title": "卓越工程学",
+        "philo.speed.title": "SIMD 深度优化",
+        "philo.speed.desc": "我们使用 Google Highway 实现跨架构汇编级加速。在现代 CPU 上获得 5x-10x 的性能增长。",
+        "philo.privacy.title": "企业级稳定性",
+        "philo.privacy.desc": "100% 离线，零遥测。基于 C++23/26 和 Direct2D，实现毫秒级响应。",
+        "philo.bloat.title": "绝对绿色",
+        "philo.bloat.desc": "单文件 EXE，无需安装。尊重您的文件系统——无注册表残留或后台服务。",
 
-        "feat.svg": "02. 矢量高清渲染",
-        "feat.svg.desc": "采用 <strong class='text-green'>显卡硬件加速</strong> 渲染。任意放大 SVG 矢量图，边缘永远清晰锐利，绝无锯齿。",
-
-        "feat.skip": "03. 智能内存优化",
-        "feat.skip.desc": "懂你的硬件。在低配电脑上自动节省内存防止崩溃，在高配电脑上火力全开提升速度。",
-
-        "feat.control": "04. 掌控一切",
-        "feat.control.desc": "自定义你的操作习惯。重新绑定鼠标手势（平移/缩放），切换透明网格，调整循环模式。",
-
-        "feat.design": "05. 设计师模式",
-        "feat.design.desc": "无边框窗口 + “总在最前” (Ctrl+T)。置顶显示图片，作为设计参考图的神器。",
-
-        "feat.inspect": "06. 深度检测",
-        "feat.inspect.desc": "专业级信息面板。查看色彩空间 (P3/sRGB)、色度采样率、压缩质量 (Q-Factor) 及完整相机参数 (EXIF)。",
-
-        "feat.repair": "07. 智能修复",
-        "feat.repair.desc": "自动识别真实格式。一键修复错误的扩展名（例如把 PNG 误存为 JPG 的文件）。",
-
-        "feat.raw": "08. RAW 极速渲染",
-        "feat.raw.desc": "摄影师的福音。一键切换“极速预览”和“完整解码”，秒开几十MB的专业 RAW 文件 (ARW/CR3)。",
-
-        "feat.wall": "09. 沉浸式照片墙",
-        "feat.wall.desc": "按 'T' 键进入照片墙模式。以 60 帧流畅度浏览成千上万张照片。",
-
-        "feat.portable": "10. 绿色便携",
-        "feat.portable.desc": "单文件 EXE。无需安装，不写注册表。配置随身带，完美支持 USB 运行。",
-
-        "philo.title": "为什么选择 QuickView？",
-        "philo.speed.title": "速度至上",
-        "philo.speed.desc": "我们采用最新的技术，最快的算法，最合理的框架来最大化您电脑的性能。",
-        "philo.privacy.title": "原生隐私",
-        "philo.privacy.desc": "100% 离线运行。100% 源代码开源。",
-        "philo.bloat.title": "拒绝臃肿",
-        "philo.bloat.desc": "6.xMB 绿色单文件程序，不产生任何垃圾数据，支持便携模式。"
+        "feat.hist.desc": "实时 SIMD 加速的 RGB 包络分析。洞察图像像素中的每一个质子。",
+        "feat.svg.desc": "Direct2D 分辨率无关路径渲染。无限无损缩放，性能零负担。",
+        "feat.hdrpanel.desc": "深度解析 MaxCLL、FALL 元数据，并支持实时峰值亮度估算。",
+        "feat.sort.desc": "浏览顺序与 Windows 自然数字逻辑完全同步。无缝跨文件夹循环 (#118)。",
+        "feat.design.desc": "无边框、总在最前。专为技术美术和设计师打造的参考利器。",
+        "feat.portable.desc": "口袋里的专业影像工具。无需安装，配置全内置，随插随用。"
     },
     // Traditional Chinese
     "zh-TW": {
         "nav.performance": "極致效能",
-        "nav.architecture": "核心技術",
+        "nav.hdr": "HDR 與色彩",
         "nav.features": "功能亮點",
-        "cta.download": "下載 v3.0.4",
+        "cta.download": "下載 v5.0.0",
         "cta.github": "查看原始碼",
-        "hero.title": "Windows 平台<br>最快的圖像檢視器。",
-        "hero.subtitle": "專注於速度的圖片檢視器。作為開源軟體，其性能媲美甚至超越商用同類產品。<br>以輕量、速度、全面的格式相容著稱。專為圖像工作者打造。",
-        "arch.title": "核心引擎：量子流 (Quantum Flow)",
-        "arch.desc": "拒絕卡頓。區別於傳統軟體，QuickView 採用獨家的 <span class='text-blue'>防卡頓技術 (Anti-Freeze)</span>，在加載超大圖片時界面依然絲般順滑。",
-        "philo.speed.title": "速度至上",
-        "philo.speed.desc": "我們採用最新的技術，最快的演算法，最合理的框架來最大化您電腦的性能。",
-        "philo.privacy.title": "原生隱私",
-        "philo.privacy.desc": "100% 離線運行。100% 源代碼開源。",
-        "philo.bloat.title": "拒絕臃腫",
-        "philo.bloat.desc": "6.xMB 綠色單文件程式，不產生任何垃圾數據，支持便攜模式。"
+        "hero.title": "專業看圖。<br>越級 HDR。",
+        "hero.subtitle": "Windows 平台的高性能圖像檢視器。採用 Google Highway SIMD 與專業 32 位線性管線。原生支持 ARM64，100% 離線，綠色無痕。",
+        "hdr.title": "工業級色彩大師",
+        "philo.speed.title": "SIMD 深度優化",
+        "philo.privacy.title": "企業級穩定性",
+        "philo.bloat.title": "絕對綠色"
     },
     // Japanese
     "ja": {
-        "nav.performance": "パフォーマンス",
-        "nav.architecture": "コア技術",
-        "nav.features": "機能",
-        "cta.download": "ダウンロード v3.0.4",
+        "nav.performance": "性能",
+        "nav.hdr": "HDRと色管理",
+        "nav.features": "特徴",
+        "cta.download": "ダウンロード v5.0.0",
         "cta.github": "ソースコード",
-        "hero.title": "Windows向けの<br>最速画像ビューア。",
-        "hero.subtitle": "スピードに特化したプロ仕様。オープンソースでありながら、商用ソフトに匹敵する性能。<br>軽量、瞬時のレスポンス、多様なフォーマット対応。デザイナーと写真家のために。",
-        "arch.title": "コアエンジン：Quantum Flow",
-        "philo.speed.title": "スピード至上",
-        "philo.speed.desc": "最新の技術、最速のアルゴリズム、最適化されたフレームワークを使用して、PCのパフォーマンスを最大化します。",
-        "philo.privacy.title": "プライバシー",
-        "philo.privacy.desc": "100％オフライン。100％オープンソース。",
-        "philo.bloat.title": "肥大化なし",
-        "philo.bloat.desc": "6.xMBの単一ファイル実行可能ファイル。ゴミデータなし。ポータブル完全対応。"
+        "hero.title": "プロ仕様の表示。<br>SDRを超えて。",
+        "hero.subtitle": "Windows向けの超高速画像ビューア。Google Highway SIMDとプロ仕様の32ビットリニアパイプラインを採用。ARM64ネイティブ、100%オフライン。",
+        "hdr.title": "インダストリアルカラー管理",
+        "philo.speed.title": "SIMD最適化",
+        "philo.privacy.title": "安定性とプライバシー",
+        "philo.bloat.title": "ゼロ・ブロード"
     },
     // Spanish
     "es": {
         "nav.performance": "Rendimiento",
-        "nav.architecture": "Tecnología",
+        "nav.hdr": "HDR y Color",
         "nav.features": "Funciones",
-        "cta.download": "Descargar v3.0.4",
-        "cta.github": "Código Fuente",
-        "hero.title": "El visor de imágenes<br>más rápido para Windows.",
-        "hero.subtitle": "Un visor de imágenes profesional centrado en la velocidad. Código abierto, rivaliza con software comercial.<br>Conocido por su ligereza, respuesta instantánea y soporte completo de formatos.",
-        "arch.title": "Motor Núcleo: Quantum Flow",
-        "philo.speed.title": "Velocidad Primero",
-        "philo.speed.desc": "Utilizamos la última tecnología, algoritmos más rápidos y marcos optimizados para maximizar el rendimiento de su PC.",
-        "philo.privacy.title": "Privacidad Nativa",
-        "philo.privacy.desc": "100% Offline. 100% Código Abierto.",
-        "philo.bloat.title": "Cero Bloatware",
-        "philo.bloat.desc": "Ejecutable de 6.xMB. Sin archivos basura. Soporte portátil total."
+        "cta.download": "Descargar v5.0.0",
+        "hero.title": "Visualización Pro.<br>Más allá del SDR.",
+        "hero.subtitle": "Visor de imágenes de alto rendimiento para Windows. Con tecnología Google Highway SIMD y canalización lineal de 32 bits. ARM64 nativo.",
+        "hdr.title": "Maestría en el Color",
+        "philo.speed.title": "Optimizado con SIMD",
+        "philo.privacy.title": "Estabilidad Empresarial",
+        "philo.bloat.title": "Cero Basura"
     },
     // German
     "de": {
         "nav.performance": "Leistung",
-        "nav.architecture": "Technik",
+        "nav.hdr": "HDR & Farbe",
         "nav.features": "Funktionen",
-        "cta.download": "Download v3.0.4",
-        "cta.github": "Quellcode",
-        "hero.title": "Der schnellste Bildbetrachter<br>für Windows.",
-        "hero.subtitle": "Ein professioneller Bildbetrachter, fokussiert auf Geschwindigkeit. Open Source, konkurriert mit kommerzieller Software.<br>Bekannt für minimalen Speicherbedarf, sofortige Reaktion und umfassende Formatunterstützung.",
-        "arch.title": "Kern-Engine: Quantum Flow",
-        "philo.speed.title": "Geschwindigkeit",
-        "philo.speed.desc": "Wir nutzen neueste Technologie und schnellste Algorithmen, um die Leistung Ihres PCs zu maximieren.",
-        "philo.privacy.title": "Privatsphäre",
-        "philo.privacy.desc": "100% Offline. 100% Open Source.",
-        "philo.bloat.title": "Kein Ballast",
-        "philo.bloat.desc": "6.xMB Einzeldatei. Keine Datenreste. Volle portable Unterstützung."
+        "cta.download": "Download v5.0.0",
+        "hero.title": "Profi-Betrachtung.<br>Jenseits von SDR.",
+        "hero.subtitle": "Hochleistungs-Bildbetrachter für Windows. Unterstützt durch Google Highway SIMD und professionelle 32-Bit-Linear-Pipeline. Natives ARM64.",
+        "hdr.title": "Industrielle Farbgüte",
+        "philo.speed.title": "SIMD-Optimiert",
+        "philo.privacy.title": "Enterprise-Stabilität",
+        "philo.bloat.title": "Kein Ballast"
     },
     // Russian
     "ru": {
         "nav.performance": "Скорость",
-        "nav.architecture": "Технологии",
+        "nav.hdr": "HDR и Цвет",
         "nav.features": "Функции",
-        "cta.download": "Скачать v3.0.4",
-        "cta.github": "Исходный код",
-        "hero.title": "Самый быстрый просмотрщик<br>изображений для Windows.",
-        "hero.subtitle": "Профессиональный просмотрщик, ориентированный на скорость. Открытый код, уровень коммерческого ПО.<br>Мгновенный отклик, легкий вес и поддержка всех форматов.",
-        "arch.title": "Движок: Quantum Flow",
-        "philo.speed.title": "Скорость прежде всего",
-        "philo.speed.desc": "Мы используем новейшие технологии и алгоритмы для максимальной производительности вашего ПК.",
-        "philo.privacy.title": "Приватность",
-        "philo.privacy.desc": "100% Оффлайн. 100% Открытый код.",
-        "philo.bloat.title": "Без мусора",
-        "philo.bloat.desc": "Один файл 6.xMB. Никакого мусора. Полная поддержка portable-режима."
+        "cta.download": "Скачать v5.0.0",
+        "hero.title": "Профи-просмотр.<br>За пределами SDR.",
+        "hero.subtitle": "Высокопроизводительный просмотрщик для Windows. Google Highway SIMD и 32-битный линейный пайплайн. Нативный ARM64.",
+        "hdr.title": "Мастерство цвета",
+        "philo.speed.title": "SIMD Оптимизация",
+        "philo.privacy.title": "Стабильность",
+        "philo.bloat.title": "Без мусора"
     }
 };
 
@@ -198,7 +139,7 @@ Object.keys(translations).forEach(lang => {
     });
 });
 
-let currentVersion = 'v3.0.4';
+let currentVersion = 'v5.0.0';
 const supportedLangs = ['en', 'zh-CN', 'zh-TW', 'ja', 'es', 'de', 'ru'];
 
 function setLanguage(lang) {
@@ -216,7 +157,6 @@ function setLanguage(lang) {
 
     const langBtn = document.getElementById('lang-btn');
     if (langBtn) {
-        // Map code to Label
         const labels = {
             'en': 'English',
             'zh-CN': '简体中文',
@@ -235,13 +175,10 @@ function detectLanguage() {
     if (saved && supportedLangs.includes(saved)) return saved;
 
     const browser = navigator.language;
-    // Strict matching
     if (supportedLangs.includes(browser)) return browser;
-    // Prefix matching for es-ES, de-DE etc.
     const prefix = browser.split('-')[0];
     if (supportedLangs.includes(prefix)) return prefix;
 
-    // Fallback for Chinese variants
     if (browser.startsWith('zh')) {
         return browser.includes('TW') || browser.includes('HK') ? 'zh-TW' : 'zh-CN';
     }
@@ -249,7 +186,6 @@ function detectLanguage() {
     return 'en';
 }
 
-// Version Auto-update
 async function fetchVersion() {
     try {
         const response = await fetch('https://api.github.com/repos/justnullname/QuickView/releases/latest');
@@ -261,7 +197,7 @@ async function fetchVersion() {
             currentVersion = latestVersion;
 
             const badge = document.getElementById('version-badge');
-            if (badge) badge.textContent = `${latestVersion} Quantum Flow Update`;
+            if (badge) badge.textContent = `${latestVersion} Advanced Color & SIMD Update`;
 
             Object.keys(translations).forEach(lang => {
                 if (translations[lang]["cta.download"]) {
@@ -280,21 +216,16 @@ async function fetchVersion() {
 document.addEventListener('DOMContentLoaded', () => {
     const lang = detectLanguage();
     setLanguage(lang);
-
     fetchVersion();
 
-    // Loop through languages on click
-    // Dropdown Logic
     const langBtn = document.getElementById('lang-btn');
     const langMenu = document.getElementById('lang-menu');
 
-    // Toggle
     langBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         langMenu.classList.toggle('show');
     });
 
-    // Selection
     const langItems = langMenu.querySelectorAll('div[data-lang]');
     langItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -304,7 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Close on outside click
     document.addEventListener('click', () => {
         if (langMenu.classList.contains('show')) {
             langMenu.classList.remove('show');
